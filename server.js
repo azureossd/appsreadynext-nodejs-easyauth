@@ -15,7 +15,7 @@ var cases = [
     { id:randomInteger(1100000,11200000 ), title: "Random Title -" + randomString()},
     { id:randomInteger(1100000,11200000 ), title: "Random Title -" + randomString()},
     { id:randomInteger(1100000,11200000 ), title: "Random Title -" + randomString()},
-    { id:randomInteger(11100000,11200000 ), title: "Random Title -" + randomString()},
+    { id:randomInteger(1110000,11200000 ), title: "Random Title -" + randomString()},
     { id:randomInteger(1100000,11200000 ), title: "Random Title -" + randomString()},
     { id:randomInteger(1100000,11200000 ), title: "Random Title -" + randomString()},
     { id:randomInteger(1100000,11200000 ), title: "Random Title -" + randomString()}
