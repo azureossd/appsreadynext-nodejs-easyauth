@@ -12,5 +12,5 @@
 4. Request **/user** to reproduce a Http 500 server error.
 5. Enable **Application Logs** to review *"Failed to forward request to application. Encountered a System.Net.Http.HttpRequestException exception after 7.878ms with message: The HTTP response headers length exceeded the set limit of 65536 bytes.. Check application logs to verify the application is properly handling HTTP traffic."* 
 
-> **Note**: Review for dotnet core limits which applies for middleware container - https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.server.kestrel.core.kestrelserverlimits?view=aspnetcore-3.1"
+> **Note**: Review for Kestrel server limits which applies also for middleware container - https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.server.kestrel.core.kestrelserverlimits?view=aspnetcore-3.1"
 
