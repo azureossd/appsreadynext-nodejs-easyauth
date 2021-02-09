@@ -5,7 +5,7 @@
 		"hostingPlanName": "[replace(resourceGroup().name,'.','')]",
 		"siteName": "[concat(toLower(variables('hostingPlanName')), uniqueString(resourceGroup().id))]",
 		"sku": "S2",
-		"repoURL": "https://github.com/azureossd/appsreadynext-nodejs-easyauth-1.git",
+		"repoURL": "https://github.com/azureossd/appsreadynext-nodejs-easyauth.git",
 		"branch": "master",
 		"siteConfig": {
 			"linuxFxVersion": "NODE|12-lts"
