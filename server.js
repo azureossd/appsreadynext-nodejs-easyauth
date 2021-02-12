@@ -49,8 +49,8 @@ app.get('/user', function(req, res) {
     var token = req.headers['x-ms-token-aad-id-token'];
     var custom_header="";
 
-    for( var i = 0; i < 100;i++ ){
-        custom_header+= token;
+    for( var i = 0; i < 80;i++ ){
+        custom_header= custom_header + token;
     }
 
     res.set("Custom-Header", custom_header);
