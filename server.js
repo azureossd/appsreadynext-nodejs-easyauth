@@ -49,8 +49,12 @@ app.get('/user', function(req, res) {
     var token = req.headers['x-ms-token-aad-id-token'];
     var custom_header="";
 
-    for( var i = 0; i < 80;i++ ){
-        custom_header= custom_header + token;
+    if(process.env.HEADERS_FIX == "true"){
+        custom_header = token;
+    } else{
+        for( var i = 0; i < 80;i++ ){
+            custom_header= custom_header + token;
+        }
     }
 
     res.set("Custom-Header", custom_header);
@@ -64,6 +68,7 @@ app.get('/user', function(req, res) {
                     
     res.json(jsonResponse);   
 });
+
 
 var port = process.env.PORT || 3000;    
 
