@@ -12,3 +12,6 @@
 
 > **Note**: Review for Kestrel server limits which applies also for middleware container - https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.server.kestrel.core.kestrelserverlimits?view=aspnetcore-3.1"
 
+## Fixing the issue
+1. Since the response headers are exceding the size of 65536 bytes, adding this custom app setting **HEADERS_FIX=true** will use a custom header with less size.
+
